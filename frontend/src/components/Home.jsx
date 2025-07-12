@@ -43,7 +43,7 @@ const Home = () => {
         if (!user) return;
         // console.log(user)
 
-        const socketUrl = import.meta.env.VITE_SOCKET_URL || "http://localhost:3000";
+        const socketUrl = import.meta.env.VITE_SOCKET_URL;
         // console.log('Connecting to socket server:', socketUrl);
 
         socketRef.current = io(socketUrl, {
